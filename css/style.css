@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+.main-header,
+.random-info {
+  flex: 1;
+  border: 1px dotted yellow;
+}
+
+html,
+body,
+.page {
+  height: 100%;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -23,13 +40,13 @@ button {
   background-color: #3882f6;
 }
 
-/* HEADER Styles */
+/* ********* HEADER Styles ********* */
 
-.header div{
+.header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 16px 120px;
 }
 
 .header-logo {
@@ -52,13 +69,17 @@ a {
   font-size: 18px;
 }
 
-/* MAIN HEADER Styles */
+/* ********* MAIN HEADER Styles ********* */
 
 .main-header {
   display: flex;
-  justify-content: space-around;
-  padding: 2em 2em;
-  gap: 1em;
+  justify-content: space-between;
+  padding: 80px 120px;
+  gap: 18px;
+}
+
+.left-section {
+  max-width: 700px;
 }
 
 .left-section h1 {
@@ -81,6 +102,50 @@ a {
 }
 
 .img-placeholder {
-  padding: 50px 150px;
-  background-color: grey;
+  padding: 50px 120px;
+  background-color: #62626b;
+}
+
+ /* ********* RANDOM INFO Styles ********* */
+
+.random-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.random-info h1 {
+  color: #1F2937;
+  font-size: 36px;
+}
+
+.img-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.img-container {
+  max-width: 150px;
+}
+
+.rand-info-img {
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+  padding: 1em;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 6px;
+} 
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1F2937;
+  text-align: center;
 }
