@@ -7,7 +7,8 @@
 }
 
 .main-header,
-.random-info {
+.random-info,
+.quote-container {
   flex: 1;
   border: 1px dotted yellow;
 }
@@ -150,7 +151,21 @@ figure {
   text-align: center;
 }
 
-/* ******* FOOTER Styles ******* */
+/* ********  QUOTE Styles ******** */
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 250px;
+}
+
+.quote-author {
+  margin-top: 6px;
+  align-self: flex-end;
+}
+
+/* ******** FOOTER Styles ******** */
 
 .footer {
   display: flex;
