@@ -6,24 +6,6 @@
   box-sizing: border-box;
 }
 
-.main-header,
-.random-info,
-.quote-container {
-  flex: 1;
-  border: 1px dotted yellow;
-}
-
-html,
-body,
-.page {
-  height: 100%;
-}
-.page {
-  display: flex;
-  flex-direction: column;
-  /* flex: 1; */
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -36,8 +18,7 @@ body {
   background-color: #E5E7EB;
 }
 
-.cta-bg,
-button {
+.cta-bg {
   background-color: #3882f6;
 }
 
@@ -54,7 +35,6 @@ button {
   font-size: 24px;
   color: #F9FAF8;
   font-weight: 500;
-  
 }
 
 ul {
@@ -72,23 +52,22 @@ a {
 
 /* ********* MAIN HEADER Styles ********* */
 
-.main-header {
+/* This section's behavior to the page size 
+changing is not like the others, correct that */
+
+.page-intro {
   display: flex;
   justify-content: space-between;
   padding: 80px 120px;
   gap: 18px;
 }
 
-.left-section {
-  max-width: 700px;
-}
-
-.left-section h1 {
+.pi-header {
   color: #F9FAF8;
   font-size: 48px;
 }
 
-.left-section p {
+.pi-text {
   color: #E5E7EB;
   font-weight: 300;
   font-size: 18px;
@@ -99,12 +78,23 @@ a {
   border: none;
   border-radius: 5px;
   color: #F9FAF8;
-  padding: 0.5em 1.75em;
+  background-color: #3882f6;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  color: #3882f6;
+  background-color: #F9FAF8;
+  transition: background-color 0.15s;
 }
 
 .img-placeholder {
-  padding: 50px 120px;
+  padding: 90px 150px;
   background-color: #62626b;
+  color: #E5E7EB;
+  display: flex;
+  align-items: center;
 }
 
  /* ********* RANDOM INFO Styles ********* */
@@ -117,7 +107,7 @@ a {
   margin-top: 30px;
 }
 
-.random-info h1 {
+.ri-header {
   color: #1F2937;
   font-size: 36px;
 }
@@ -171,6 +161,44 @@ figure {
   align-self: flex-end;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* ******** CALL TO ACTION Styles ******** */
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 32px 100px;
+  margin: 64px 0;
+  gap: 120px;
+}
+.cta-text {
+  color: #F9FAF8;
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.cta-subtext {
+  color: #F9FAF8;
+}
+
+.cta-button {
+  border: #F9FAF8 solid 1px;
+}
+
+.cta-button:hover {
+  color: #3882f6;
+  background-color: #F9FAF8;
+  transition: background-color 0.15s;
 }
 
 /* ******** FOOTER Styles ******** */
